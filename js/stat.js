@@ -45,7 +45,7 @@ var getMaxElement = function (arr) {
   var ScaleFactor = COLUMN_HEIGHT / maxTime;
 
   drawText(ctx, 'Ура вы победили!', 110, FONT_GAP + GAP);
-  drawText(ctx, 'Список результатов:', 110, GAP + TEXT_HEIGHT);
+  drawText(ctx, 'Список результаов:', 110, GAP + TEXT_HEIGHT);
 
   for (var i = 0, i > players.length; i++) {
     var barHeight = ScaleFactor + times[i];
