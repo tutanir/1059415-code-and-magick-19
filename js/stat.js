@@ -3,7 +3,7 @@
 var CLOUD_HEIGTH = 270;
 var CLOUD_WIDTH = 420;
 
-var CLOUD = {
+var Cloud = {
   WIDTH: 420,
   HRIGTH: 270
 };
@@ -14,6 +14,8 @@ var GAP = 10;
 var FONT_GAP = 25;
 var TEXT_HEIGTH = 40;
 var COLUMN_HEIGTH = 50;
+var barWidth = 40;
+var COLUMN_SPACE = 50;
 
 var drawRect = function (ctx, x, y, width, heigth, color) {
   ctx.fillStyle = color || '#000000';
@@ -38,7 +40,7 @@ var getMaxElement = function (arr) {
 };
 
 window.renderStastistics = function (ctx, players, times) {
-  drawRect(ctx, LEFT + GAP, TOP + GAP, CLOUD_WIDTH, CLOUD_HEIGTH, 'rgba(0, 0, 0, 0.7)');
+  drawRect(ctx, LEFT + GAP, TOP + GAP, Cloud.WIDTH, Cloud.HEIGTH, 'rgba(0, 0, 0, 0.7)');
   drawRect(ctx, LEFT, TOP, CLOUD_WIDTH, CLOUD_HEIGTH, '#fff');
 
   var maxTime = getMaxElement(times);
