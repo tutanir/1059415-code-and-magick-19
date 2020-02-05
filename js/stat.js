@@ -51,7 +51,7 @@ window.renderStatistics = function (ctx, players, times) {
   drawText(ctx, 'Список результатов:', 110, GAP + TEXT_HEIGHT);
 
   for (var i = 0; i < players.lenght; i++) {
-    var barHeigth = ScaleFactor + times[i];
+    var barHeight = ScaleFactor + times[i];
     var x = LEFT + GAP + COLUMN_SPACE + (barHeight + COLUMN_SPACE) * i;
     var y = LEFT + GAP + COLUMN_HEIGHT - barHeight;
     drawRect(ctx, x, y - FONT_GAP, barWidht, barHeight, players[i] === 'Вы' ? 'rgba(255 0 0 1)' : 'hls(240,' + Math.random() * 100 + '%, 50%)');
